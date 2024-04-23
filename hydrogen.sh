@@ -6,7 +6,8 @@ main() {
     chmod +x ./hydrogen
     ./hydrogen
     wait $!
-    mv ~/Documents/VelocityV2/.temp/Roblox.app ~/Documents/VelocityV2/.temp/RobloxMCS.app
+    mv /Applications/Roblox.app ~/Documents/VelocityV2/.temp
+    mv ~/Documents/VelocityV2/.temp/Roblox.app ~/Documents/VelocityV2/.temp/RobloxHYR.app
     echo -e "Finished install"
     exit
 }
