@@ -23,7 +23,7 @@ main() {
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
     rm -r "/Applications/Roblox.app/Contents/MacOS/RobloxPlayerInstaller.app"
     rm ./insert_dylib
-    rm -rf MacSploit.app MacSploit.zip __MACOSX hwid
+    rm -rf MacSploit.app MacSploit.zip __MACOSX hwid RobloxMCS.app
     mv /Applications/Roblox.app ~/Documents/VelocityV2/.temp
     mv ~/Documents/VelocityV2/.temp/Roblox.app ~/Documents/VelocityV2/.temp/RobloxMCS.app
     echo -e "Finished install"
