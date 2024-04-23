@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-    cd ~/Documents/Velocity\ v2/.temp
+    cd ~/Documents/VelocityV2/.temp
     curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
