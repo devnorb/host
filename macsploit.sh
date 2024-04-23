@@ -24,6 +24,7 @@ main() {
     rm -r "/Applications/Roblox.app/Contents/MacOS/RobloxPlayerInstaller.app"
     rm ./insert_dylib
     rm -rf MacSploit.app MacSploit.zip __MACOSX hwid
+    echo -e "Finished install"
     exit
 }
 
