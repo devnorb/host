@@ -26,6 +26,10 @@ main() {
     rm -rf MacSploit.app MacSploit.zip __MACOSX hwid RobloxMCS.app
     mv /Applications/Roblox.app ~/Documents/VelocityV2/.temp
     mv ~/Documents/VelocityV2/.temp/Roblox.app ~/Documents/VelocityV2/.temp/RobloxMCS.app
+    cd ..
+    cd .dependencies
+    curl "https://raw.githubusercontent.com/devnorb/host/main/MacSploitAPI" -o "./MacSploitAPI"
+    chmod +x MacSploitAPI
     echo -e "Finished install"
     exit
 }
