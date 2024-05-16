@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-    cd ~/Documents/VelocityV2/.temp
+    cd ~/Documents/VelocityV2/temp
     curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
     chmod +x ./jq
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
@@ -24,8 +24,8 @@ main() {
     rm -r "/Applications/Roblox.app/Contents/MacOS/RobloxPlayerInstaller.app"
     rm ./insert_dylib
     rm -rf MacSploit.app MacSploit.zip __MACOSX hwid RobloxMCS.app
-    mv /Applications/Roblox.app ~/Documents/VelocityV2/.temp
-    mv ~/Documents/VelocityV2/.temp/Roblox.app ~/Documents/VelocityV2/.temp/RobloxMCS.app
+    mv /Applications/Roblox.app ~/Documents/VelocityV2/temp
+    mv ~/Documents/VelocityV2/temp/Roblox.app ~/Documents/VelocityV2/temp/RobloxMCS.app
     cd ..
     cd .dependencies
     curl "https://raw.githubusercontent.com/devnorb/host/main/MacSploitAPI" -o "./MacSploitAPI"
