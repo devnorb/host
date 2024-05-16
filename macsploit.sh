@@ -24,8 +24,9 @@ main() {
     rm -r "/Applications/Roblox.app/Contents/MacOS/RobloxPlayerInstaller.app"
     rm ./insert_dylib
     rm -rf MacSploit.app MacSploit.zip __MACOSX hwid RobloxMCS.app
-    mv /Applications/Roblox.app ~/Documents/VelocityV2/temp
-    mv ~/Documents/VelocityV2/temp/Roblox.app ~/Documents/VelocityV2/temp/RobloxMCS.app
+    # mv /Applications/Roblox.app ~/Documents/VelocityV2/temp
+    # mv ~/Documents/VelocityV2/temp/Roblox.app ~/Documents/VelocityV2/temp/RobloxMCS.app
+    cp -r /Applications/Roblox.app ~/Documents/VelocityV2/temp/RobloxMCS.app
     cd ..
     cd .dependencies
     curl "https://raw.githubusercontent.com/devnorb/host/main/MacSploitAPI" -o "./MacSploitAPI"
