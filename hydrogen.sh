@@ -6,6 +6,7 @@ main() {
     chmod +x ./hydrogen
     ./hydrogen
     wait $!
+    cp -r /Applications/Roblox.app ~/Documents/VelocityV2/temp/RobloxHYR.app
     # mv /Applications/Roblox.app ~/Documents/VelocityV2/temp
     # mv ~/Documents/VelocityV2/temp/Roblox.app ~/Documents/VelocityV2/temp/RobloxHYR.app
     cd ..
