@@ -2259,12 +2259,12 @@ end
 function library:AddWarning(warning)
     warning = typeof(warning) == "table" and warning or {}
     warning.text = tostring(warning.text) 
-    warning.category = warning.category == "confirm" and "confirm" or ""
+    warning.type = warning.type == "confirm" and "confirm" or ""
 
     local answer
     function warning:Show()
         library.warning = warning
-        if warning.main and warning.category == "" then return end
+        if warning.main and warning.type == "" then return end
         if library.popup then library.popup:Close() end
         if not warning.main then
             warning.main = library:Create("TextButton", {
@@ -2291,7 +2291,7 @@ function library:AddWarning(warning)
                 Parent = warning.main
             })
 
-            if warning.category == "confirm" then
+            if warning.type == "confirm" then
                 local button = library:Create("TextLabel", {
                     ZIndex = 2,
                     Position = UDim2.new(0.5, -105, 0.5, -10),
