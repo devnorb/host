@@ -56,7 +56,7 @@ main() {
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
     local versionInfo=$(curl -s "https://git.raptor.fun/main/version.json")
     
-    curl "https://setup.rbxcdn.com/mac/version-0e4f9b5c84614d79-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
+    curl "https://setup.rbxcdn.com/mac/version-9a42bf606f9f44c2-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     # apparently roblox just reuploaded the old version 💀
     rm ./jq
     echo -n "Installing Latest Roblox... "
